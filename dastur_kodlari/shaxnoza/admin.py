@@ -1,19 +1,40 @@
-KOK="\033[34m"
-QIZIL="\033[31m"
-YASHIL="\033[32m"
-RANG="\033[0m" 
+KOK = "\033[34m"
+QIZIL = "\033[31m"
+YASHIL = "\033[32m"
+RANG = "\033[0m"
+
+adminlar = [
+    {
+        "id": 1,
+        "login": "admin1",
+        "parol": "password123",
+        "ism": "Ali"
+    },
+    {
+        "id": 2,
+        "login": "admin2",
+        "parol": "adminpass456",
+        "ism": "Bekzod"
+    },
+    {
+        "id": 3,
+        "login": "admin3",
+        "parol": "secure789",
+        "ism": "Javohir"
+    }
+]
 
 
 def admin_panel():
-    login = "admin"
-    parol = "1234"
+    for i in adminlar:
+        login = input("Loginni kiriting: ")
+        parol = input("Parolni kiriting: ")
+        if i["login"] == login and i["parol"] == parol:
+            print("Siz tizimga muvafaqiyatli kirdingiz.")
+        else:
+            print("Login yoki parol xato!!!")
+            return
+        while True:
+           pass
+        
 
-    l = input(f"{YASHIL}Loginni kiriting: {RANG}")
-    p = int(input(f"{YASHIL}Parolni kiriting: {RANG}"))
-
-    if login != l or parol == p:
-            print(f"{QIZIL}Login xato!!!{RANG}")
-            print(f"{QIZIL}Iltimos login va parol qayta kiriting {RANG}")
-            return admin_panel()
-    while True:
-          pass
