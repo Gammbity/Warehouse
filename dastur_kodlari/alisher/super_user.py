@@ -14,9 +14,9 @@ def super_user():
     l = input(f"{YASHIL}Loginni kiriting: {RANG}")
     p = int(input(f"{YASHIL}Parolni kiriting: {RANG}"))
 
-    if login != l or parol == p:
+    if login != l or parol != p:
             print(f"{QIZIL}Login xato!!!{RANG}")
             print(f"{QIZIL}Iltimos login va parol qayta kiriting {RANG}")
-            return super_user()
+            return 
     while True:
           pass
