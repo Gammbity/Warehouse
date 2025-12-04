@@ -21,14 +21,17 @@ def super_user():
         if l == login and p == parol:
             os.system("cls")
             print("Muvaffaqiyatli kirdingiz!")
-            return  
+            while True:
+                pass
         
-        print(f"{QIZIL}Login yoki parol xato!!!{RANG}")
+        
         urinish += 1
 
         if urinish < 2:
             os.system("cls")
+            print(f"{QIZIL}Login yoki parol xato!!!{RANG}")
             print("Login va parolni qayta kiriting.")
-    
-    print("Urinishlar soni ikkitadan ortib ketdi!!!")
+
+    os.system("cls")
+    print(f"{QIZIL}Urinishlar soni ikkitadan ortib ketdi!!!{RANG}")
     return  

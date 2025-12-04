@@ -32,8 +32,8 @@ def admin_panel():
     urinish = 0       
 
     while urinish < 2:   
-        login = input("Loginni kiriting: ")
-        parol = input("Parolni kiriting: ")
+        login = input(f"{YASHIL}Loginni kiriting: {RANG}")
+        parol = input(f"{YASHIL}Parolni kiriting: {RANG}")
         
         topildi = False
 
@@ -48,7 +48,7 @@ def admin_panel():
         if topildi == False:
             os.system("cls")
             urinish += 1
-            print("Login yoki parol xato!!!")
+            print(f"{QIZIL}Login yoki parol xato!!!{RANG}")
             
             if urinish < 2:
                 print("Login va parolni qayta kiriting.")
