@@ -1,3 +1,4 @@
+import os
 from dastur_kodlari.shaxnoza.admin import admin_panel
 from dastur_kodlari.alisher.super_user import super_user
 KOK="\033[34m"
@@ -6,6 +7,7 @@ YASHIL="\033[32m"
 RANG="\033[0m" 
 
 def warehouse_menu():
+    os.system("cls")
     while True:
         print(f"""
          {KOK}Welcome to Warehouse
@@ -18,6 +20,7 @@ def warehouse_menu():
             admin_panel()
         elif tanlov == "2":
             super_user()
+
         else:
             print(f"{QIZIL}Noto'g'ri tanlov!!!{RANG}")
             print(f"{QIZIL}Boshidan tanlang.{RANG}")

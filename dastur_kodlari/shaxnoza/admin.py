@@ -1,3 +1,6 @@
+import os
+
+
 KOK = "\033[34m"
 QIZIL = "\033[31m"
 YASHIL = "\033[32m"
@@ -24,17 +27,31 @@ adminlar = [
     }
 ]
 
-
 def admin_panel():
-    for i in adminlar:
+    os.system("cls")
+    urinish = 0       
+
+    while urinish < 2:   
         login = input("Loginni kiriting: ")
         parol = input("Parolni kiriting: ")
-        if i["login"] == login and i["parol"] == parol:
-            print("Siz tizimga muvafaqiyatli kirdingiz.")
-        else:
-            print("Login yoki parol xato!!!")
-            return
-        while True:
-           pass
         
+        topildi = False
 
+        for admin in adminlar:
+            os.system("cls")
+            if admin["login"] == login and admin["parol"] == parol:
+                topildi = True
+                print("Siz tizimga muvafaqiyatli kirdingiz.")
+                while True:
+                    pass   
+                
+        if topildi == False:
+            os.system("cls")
+            urinish += 1
+            print("Login yoki parol xato!!!")
+            
+            if urinish < 2:
+                print("Login va parolni qayta kiriting.")
+
+    print("Urinishlar soni ikki martadan oshib ketti!!!")
+    return
