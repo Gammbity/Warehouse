@@ -1,6 +1,6 @@
 import os
 from dastur_kodlari.shaxnoza.admin import admin_panel
-from dastur_kodlari.alisher.super_user import super_user
+from dastur_kodlari.alisher.superuser import super_user
 KOK="\033[34m"
 QIZIL="\033[31m"
 YASHIL="\033[32m"
