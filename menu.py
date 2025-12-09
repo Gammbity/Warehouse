@@ -1,6 +1,6 @@
 import os
 from dastur_kodlari.shaxnoza.admin import admin_panel
-from dastur_kodlari.alisher.superuser import super_user
+from dastur_kodlari.alisher.superuser_service import run_superuser_system
 KOK="\033[34m"
 QIZIL="\033[31m"
 YASHIL="\033[32m"
@@ -19,7 +19,7 @@ def warehouse_menu():
         if tanlov == "1":
             admin_panel()
         elif tanlov == "2":
-            super_user()
+            run_superuser_system()
 
         else:
             print(f"{QIZIL}Noto'g'ri tanlov!!!{RANG}")

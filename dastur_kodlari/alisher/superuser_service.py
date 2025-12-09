@@ -1,11 +1,11 @@
-from utils import load, color
-from superuser import (
+from dastur_kodlari.alisher.utils import load, color
+from dastur_kodlari.alisher.superuser import (
     init_files, view_admins, create_admin, delete_admin, update_admin,
     view_warehouses, create_warehouse, delete_warehouse, report
 )
 
 def login():
-    users = load("data/admins.json")
+    users = load("dastur_kodlari/alisher/data/admins.json")
     u = input("Username: ")
     p = input("Password: ")
     for usr in users:
@@ -38,13 +38,12 @@ def superuser_menu():
         elif c == "8": report()
         elif c == "0": break
 
-def main():
+
+def run_superuser_system():
     init_files()
     role = login()
     if role == "superuser":
         superuser_menu()
     else:
         print(color("Kirish rad etildi.", "red"))
-
-if __name__ == "__main__":
-    main()
+        input("Menyuga qaytish uchun Enterni bosing...")

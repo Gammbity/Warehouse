@@ -1,7 +1,7 @@
-from utils import load, save, ensure_json, color
+from dastur_kodlari.alisher.utils import load, save, ensure_json, color
 
-ADMINS = "data/admins.json"
-WAREHOUSES = "data/warehouses.json"
+ADMINS = "dastur_kodlari/alisher/data/admins.json"
+WAREHOUSES = "dastur_kodlari/alisher/data/warehouses.json"
 
 def init_files():
     ensure_json(ADMINS, [
