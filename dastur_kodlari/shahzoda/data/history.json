@@ -40,5 +40,11 @@
         "user": "yevgenevic",
         "action": "Update",
         "details": "ID: 6 | Price: 1000->1200"
+    },
+    {
+        "time": "2025-12-11 00:07:03",
+        "user": "yevgenevic",
+        "action": "Transfer",
+        "details": "samsung (9 ta) | Ombor 2 -> 3"
     }
 ]

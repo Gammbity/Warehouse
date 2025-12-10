@@ -41,14 +41,25 @@ def login():
 def admin_menu(user_name):
     while True:
         os.system("cls" if os.name == "nt" else "clear")
+        all_products = service.get_all()
+        total_count = len(all_products)
+        low_stock_count = sum(1 for p in all_products if p['qty'] < 5)
         print(f"{KOK}=== Admin Panel: {user_name} ==={RANG}")
+        print(f"{SARIQ}┌──────────────────────────────────┐{RANG}")
+        print(f"{SARIQ}│ 📦 Jami tovarlar:      {total_count:<8}  │{RANG}")
+        if low_stock_count > 0:
+            print(f"{SARIQ}│ {QIZIL}⚠️  Kam qolganlar:      {low_stock_count:<8} {SARIQ} │{RANG}")
+        else:
+            print(f"{SARIQ}│ {YASHIL}OK Hamma tovar yetarli   {low_stock_count:<8} {SARIQ} │{RANG}")
+            
+        print(f"{SARIQ}└──────────────────────────────────┘{RANG}\n")
         print("1. Mahsulot qo'shish")
         print("2. Mahsulot o'chirish")
-        print("3. Hisobot (Report) va Ogohlantirish")
+        print("3. Hisobot (Report)")
         print("4. Tahrirlash (Update)")
         print("5. Qidiruv (Search)")
         print("6. Transfer")
-        print(f"{SARIQ}7. Tarix (History){RANG}") 
+        print("7. Tarix (History)")
         print("0. Chiqish")
         
         choice = input(f"{YASHIL}Tanlang: {RANG}")

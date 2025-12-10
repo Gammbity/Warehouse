@@ -9,7 +9,7 @@
         "id": 3,
         "name": "samsung",
         "price": 1100,
-        "qty": 9,
+        "qty": 0,
         "warehouse_id": 2
     },
     {
@@ -39,5 +39,12 @@
         "price": 1000,
         "qty": 10,
         "warehouse_id": 2
+    },
+    {
+        "id": 8,
+        "name": "samsung",
+        "price": 1100,
+        "qty": 9,
+        "warehouse_id": 3
     }
 ]
