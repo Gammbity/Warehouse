@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "login": "admin1",
+      "parol": "password123",
+      "ism": "Ali"
+    },
+    {
+      "id": 2,
+      "login": "admin2",
+      "parol": "adminpass456",
+      "ism": "Bekzod"
+    },
+    {
+      "id": 3,
+      "login": "admin3",
+      "parol": "secure789",
+      "ism": "Javohir"
+    },
+    {
+      "id": 4,
+      "login": "admin4",
+      "parol": "qwerty123",
+      "ism": "Sardor"
+    },
+    {
+      "id": 5,
+      "login": "admin5",
+      "parol": "mypassword",
+      "ism": "Malika"
+    }
+  ]
+  
