@@ -1,0 +1,43 @@
+[
+    {
+        "id": 2,
+        "name": "iphone 17",
+        "price": 120000000,
+        "qty": 10
+    },
+    {
+        "id": 3,
+        "name": "samsung",
+        "price": 1100,
+        "qty": 9,
+        "warehouse_id": 2
+    },
+    {
+        "id": 4,
+        "name": "samsung",
+        "price": 1100,
+        "qty": 14,
+        "warehouse_id": 1
+    },
+    {
+        "id": 5,
+        "name": "xiaomi",
+        "price": 230,
+        "qty": 50,
+        "warehouse_id": 1
+    },
+    {
+        "id": 6,
+        "name": "xiaomi 17 pro max",
+        "price": 1200,
+        "qty": 70,
+        "warehouse_id": 3
+    },
+    {
+        "id": 7,
+        "name": "xiaomi 17 pro max",
+        "price": 1000,
+        "qty": 10,
+        "warehouse_id": 2
+    }
+]

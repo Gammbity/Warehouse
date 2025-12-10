@@ -1,0 +1,44 @@
+[
+    {
+        "time": "2025-12-10 23:39:32",
+        "user": "a",
+        "action": "Transfer",
+        "details": "samsung (2 ta) | Ombor 2 -> 1"
+    },
+    {
+        "time": "2025-12-10 23:40:03",
+        "user": "a",
+        "action": "Add",
+        "details": "xiaomi (100 ta) -> Ombor 1"
+    },
+    {
+        "time": "2025-12-10 23:40:45",
+        "user": "a",
+        "action": "Transfer",
+        "details": "xiaomi (50 ta) | Ombor 1 -> 2"
+    },
+    {
+        "time": "2025-12-10 23:41:18",
+        "user": "a",
+        "action": "Delete",
+        "details": "ID: 6 | xiaomi"
+    },
+    {
+        "time": "2025-12-10 23:59:11",
+        "user": "yevgenevic",
+        "action": "Add",
+        "details": "xiaomi 17 pro max (80 ta) -> Ombor 3"
+    },
+    {
+        "time": "2025-12-11 00:00:26",
+        "user": "yevgenevic",
+        "action": "Transfer",
+        "details": "xiaomi 17 pro max (10 ta) | Ombor 3 -> 2"
+    },
+    {
+        "time": "2025-12-11 00:00:58",
+        "user": "yevgenevic",
+        "action": "Update",
+        "details": "ID: 6 | Price: 1000->1200"
+    }
+]
