@@ -1,3 +1,4 @@
+
 # Warehouse Management System
 
 A Python-based Warehouse Management System (WMS) featuring a Command Line Interface (CLI) for managing products, warehouses, and users. The system supports two distinct roles: **Superuser** and **Admin**.
