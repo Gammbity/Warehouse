@@ -1,5 +1,5 @@
 import os
-from dastur_kodlari.Shahzoda.admin import admin_menu as admin_panel
+from dastur_kodlari.shahzoda.admin import admin_panel
 from dastur_kodlari.alisher.superuser_service import run_superuser_system
 KOK   = "\033[34m"
 QIZIL = "\033[31m"
