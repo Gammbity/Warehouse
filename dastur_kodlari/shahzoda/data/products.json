@@ -46,5 +46,12 @@
         "price": 1100,
         "qty": 9,
         "warehouse_id": 3
+    },
+    {
+        "id": 9,
+        "name": "noka",
+        "price": 2,
+        "qty": 19,
+        "warehouse_id": 3
     }
 ]
